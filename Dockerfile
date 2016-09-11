@@ -14,7 +14,7 @@ RUN apt-get update \
 RUN add-apt-repository -y ppa:ansible/ansible \
   && apt-get update \
   && apt-get install -y --no-install-recommends \
-     ansible \
+     net-tools ansible \
   && rm -rf /var/lib/apt/lists/* \
   && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
   && apt-get clean
